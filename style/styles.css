@@ -1,0 +1,262 @@
+/* styles.css */
+
+body {
+  font-family: 'Arimo';
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    height: 70vh;
+  background-image: url('images/BG1.png'); /* Set background image */
+  background-size: cover; /* Ensure the background image covers the entire viewport */
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Ensure background image remains fixed */
+  
+  margin-top: 120px;
+
+}
+
+.name-container {    
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5); /* Silverish color with opacity */
+  border-radius: 20px; /* Rounded corners */
+  padding: 10px; /* Add padding */
+  backdrop-filter: blur(3px); /* Blurry background effect */
+  border: 5px solid silver; 
+  margin-top: 5px;
+}
+
+
+.name-container:hover{
+  transform: scale(1); 
+}
+
+
+.first-name {
+  margin-bottom: 0px; /* Adjust as needed */
+  margin-right: 200px;
+  font-weight: bold;
+  color: black;
+}
+
+.last-name {
+  font-weight: bold;
+  margin-left: 190px;
+  color: rgb(14, 14, 14);
+}
+
+.big-bold {
+  font-size: 130px; /* Adjust font size as needed */
+}
+
+@media screen and (max-width: 1024px) {
+  .first-name {
+      margin-right: 120px;
+  }
+
+  .last-name {
+      margin-left: 190px;
+  }
+
+  .big-bold {
+      font-size: 65px; /* Adjust font size as needed */
+  }
+
+}
+
+/* Navbar styles */
+.navbar {
+  position: fixed; /* Fixed positioning */
+  top: 0; /* Position at the top of the viewport */
+  left: 0; /* Align with the left edge */
+  width: 100%; /* Full width */
+  background-color: black; /* Black background color */
+  z-index: 1000; /* Ensure the navbar appears above other content */
+}
+
+.navbar ul {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  flex: 1; /* Each navbar item takes equal space */
+}
+
+.navbar a {
+  display: block;
+  color: white; /* White text color */
+  text-align: center;
+  padding: 20px 30px; /* Increased vertical and horizontal padding */
+  text-decoration: none;
+  font-size: 24px; /* Increased font size */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #555; /* Darker background color on hover */
+}
+
+/* Active/current link */
+.navbar .active {
+  background-color: #4CAF50; /* Green */
+}
+
+/* Responsive navigation */
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    flex-direction: row; /* Stack items vertically on smaller screens */
+  }
+  .navbar li {
+    text-align: center; /* Center align items */
+    border-bottom: 1px solid #666; /* Add a border between items */
+  }
+  
+}
+
+
+
+
+/* styles.css */
+
+/* Other styles remain the same */
+
+.project-container {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column; /* Display projects in a column */
+  align-items: center;
+}
+ 
+.project-container {
+  margin-top: 20px; /* Adjust margin-top to create space below navbar */
+  display: flex;
+  flex-direction: column; /* Display projects in a column */
+  align-items: center;
+}
+ 
+.project {
+  width: 100%;
+  max-width: 700px; /* Increase max-width for wider boxes */
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 10px; /* Increase padding for longer project cards */
+  margin: 20px;
+}
+
+.project:hover {
+  transform: scale(1.15); 
+}
+
+@media screen and (max-width: 768px) {
+  .project {
+    margin-left: 80px; 
+    margin-right: 40px; /* Add space from left on smaller screens */
+  }
+
+  .project:hover {
+    transform: scale(1.05); /* No scaling on smaller screens */
+  }
+}
+
+.image-container {
+  width: 40%; /* Adjust image container width */
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-info {
+  flex: 1;
+  margin-left: 20px; /* Add space between image and text */
+}
+
+.project-info h2 {
+  font-size: 24px; /* Increase font size for heading */
+  margin-bottom: 10px; /* Add margin below heading */
+}
+
+.project-info p {
+  font-size: 18px; /* Increase font size for paragraph */
+  margin-bottom: 15px; /* Add margin below paragraph */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Display ellipsis (...) for overflow */
+}
+
+.project-info a {
+  display: inline-block;
+  background-color: #4CAF50; /* Green background color for link */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-top: 10px; /* Add margin to separate GitHub link from other text */
+}
+
+.project-info a:hover {
+  background-color: #45a049; /* Darker green color on hover */
+}
+
+.footer {
+  position: fixed; /* Fixed positioning */
+  bottom: 0; /* Position at the bottom of the viewport */
+  left: 0; /* Align with the left edge */
+  width: 100%; /* Full width */
+  padding: 10px 0; /* Add padding */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center align items horizontally */
+  background-color: black; /* Remove background color */
+  
+}
+
+.footer a {
+  margin: 0 40px; /* Add space between links */
+  transition: color 0.3s;
+}
+
+.footer img {
+  width: 30px; /* Set width of images */
+  height: 30px; /* Set height of images */
+}
+
+.footer img:hover {
+  opacity: 0.7;
+  
+}
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  margin-right: 20px; /* Add margin between each image */
+}
+
+
+.contact_container
+  {    
+    font-size: large;
+    background-color: rgba(255, 255, 255, 0.5); /* Silverish color with opacity */
+    border-radius: 20px; /* Rounded corners */
+    padding: 40px; /* Add padding */
+    backdrop-filter: blur(1px); /* Blurry background effect */
+    border: 5px solid silver; 
+    margin-top: 20px;
+    
+  }
+
+
+  
+.contact_container:hover{
+  
+  backdrop-filter: blur(8px);
+}
+

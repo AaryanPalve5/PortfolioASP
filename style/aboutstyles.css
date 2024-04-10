@@ -1,0 +1,308 @@
+
+
+body {
+    font-family: 'Arimo';
+    margin: 0;
+    padding: 10;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 70vh;
+    background-image: url('images/BG1.png'); /* Set background image */
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Ensure background image remains fixed */
+    text-align: center;
+    margin-top: 640px;
+}
+
+  
+
+
+.container {
+    background-color: rgba(255, 255, 255, 0.492); /* White color with opacity */
+    padding: 90px;
+    margin-top: 100px; /* Add padding to create space around the content */
+    border-radius: 20px; /* Add border radius for rounded corners */
+}
+
+.navbar {
+    position: fixed; /* Fixed positioning */
+    top: 0; /* Position at the top of the viewport */
+    left: 0; /* Align with the left edge */
+    width: 100%; /* Full width */
+    background-color: black; /* Black background color */
+    z-index: 1000; /* Ensure the navbar appears above other content */
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    flex: 1; /* Each navbar item takes equal space */
+}
+
+.navbar a {
+    display: block;
+    color: white; /* White text color */
+    text-align: center;
+    padding: 20px 30px; /* Increased vertical and horizontal padding */
+    text-decoration: none;
+    font-size: 24px; /* Increased font size */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #555; /* Darker background color on hover */
+}
+
+/* Active/current link */
+.navbar .active {
+    background-color: #4CAF50; /* Green */
+}
+
+/* Responsive navigation */
+@media screen and (max-width: 768px) {
+
+    
+    .navbar ul {
+        
+        flex-direction: row; /* Stack items vertically on smaller screens */
+    }
+    .navbar li {
+        text-align: center; /* Center align items */
+        border-bottom: 1px solid #666; /* Add a border between items */
+    }
+    
+
+}
+
+.footer {
+    position: fixed; /* Fixed positioning */
+    bottom: 0; /* Position at the bottom of the viewport */
+    left: 0; /* Align with the left edge */
+    width: 100%; /* Full width */
+    padding: 10px 0; /* Add padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center align items horizontally */
+    background-color: black; /* Remove background color */
+
+}
+
+.footer a {
+    margin: 0 40px; /* Add space between links */
+    transition: color 0.3s;
+}
+
+.footer img {
+    width: 30px; /* Set width of images */
+    height: 30px; /* Set height of images */
+}
+
+.footer img:hover {
+    opacity: 0.7;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin-right: 20px; /* Add margin between each image */
+}
+
+/* Rest of your CSS styles */
+
+.other-interests-section,
+.guitar-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust opacity */
+    border-radius: 10px;
+    margin-bottom: 70px;
+}
+
+/* Other Interests title */
+.other-interests-title,
+.guitar-title {
+    color: #333;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+
+    
+    .other-interests-section,
+    .guitar-section {
+        padding: 10px;
+    }
+
+    .other-interests-title,
+    .guitar-title {
+        font-size: 18px;
+    }
+}
+
+/* Rest of your CSS styles */
+
+/* Box for Achievements section */
+.achievements-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust opacity */
+    border-radius: 10px;
+}
+
+/* Achievements title */
+.achievements-title {
+    color: #333;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Certificate image style */
+.certificate-image {
+    display: block;
+    margin: auto;
+    width: 300px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Skills and Experience sections */
+.experience-section,
+.skillset-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust opacity */
+    border-radius: 10px;
+}
+
+.experience-section h1,
+.skillset-section h1 {
+    color: #333;
+    text-align: center;
+}
+
+.experience-section h3,
+.skillset-section h3 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.experience-section ul,
+.skillset-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.experience-section li,
+.skillset-section li {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .experience-section,
+    .skillset-section,
+    .achievements-section {
+        padding: 10px;
+    }
+
+    .experience-section h3,
+    .skillset-section h3 {
+        font-size: 16px;
+    }
+
+    .achievements-title {
+        font-size: 18px;
+    }
+}
+
+li {
+    font-size: 20px; /* Adjust the font size as needed */
+   
+}
+
+
+.image-container img {
+    width: 100%;
+    max-height: 200px; /* Set max height of images */
+    border-radius: 10px;
+}
+
+/* Box for Achievements section */
+.achievements-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust opacity */
+    border-radius: 10px;
+    text-align: center; /* Center align content */
+}
+
+/* Achievements title */
+.achievements-title {
+    color: #333;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px; /* Add space below the title */
+}
+
+/* Certificate image style */
+.certificate-image {
+    display: block;
+    margin: auto;
+    max-width: 100%; /* Adjust width to fit container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Apply border radius */
+}
+
+
+/* Rest of your CSS styles */
+
+.section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+.section h1 {
+    color: #333;
+    font-style: italic;
+    text-align: center;
+}
+
+.section hr {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.image-container {
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+

@@ -1,0 +1,174 @@
+/* projectstyle.css */
+
+body {
+  font-family: 'Arimo';
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+    background-image: url('images/BG1.png'); /* Set background image */
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Ensure background image remains fixed */
+    margin-top: 120px;
+}
+
+.project-container {
+    margin-top: 90px;
+    
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap; /* Allow projects to wrap to the next line */
+    justify-content: center; /* Center projects horizontally */
+}
+
+.project {
+    width: 350px; /* Set width of each project */
+    margin: 20px; /* Add margin around each project */
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 10px; /* Increase padding for longer project cards */
+    display: flex;
+    flex-direction: column; /* Display project details in a column */
+    align-items: center;
+}
+
+.project:hover {
+    transform: scale(1.05); 
+}
+
+.image-container {
+    width: 100%; /* Set image container width to full */
+}
+
+.image-container img {
+    width: 100%;
+    max-height: 200px; /* Set max height of images */
+    border-radius: 10px;
+}
+
+.project a {
+    background-color: #4CAF50; /* Green background color for link */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Add margin to separate GitHub link from other text */
+}
+
+.project a:hover {
+    background-color: #45a049; /* Darker green color on hover */
+}
+
+
+/* projectstyle.css */
+
+
+  
+
+
+.footer {
+    position: fixed; /* Fixed positioning */
+    bottom: 0; /* Position at the bottom of the viewport */
+    left: 0; /* Align with the left edge */
+    width: 100%; /* Full width */
+    padding: 10px 0; /* Add padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center align items horizontally */
+    background-color: black; /* Remove background color */
+}
+
+.footer a {
+    margin: 0 40px; /* Add space between links */
+    transition: color 0.3s;
+}
+
+.footer img {
+    width: 30px; /* Set width of images */
+    height: 30px; /* Set height of images */
+}
+
+.footer img:hover {
+    opacity: 0.7;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin-right: 20px; /* Add margin between each image */
+}
+
+
+
+
+/* Navbar styles */
+.navbar {
+    position: fixed; /* Fixed positioning */
+    top: 0; /* Position at the top of the viewport */
+    left: 0; /* Align with the left edge */
+    width: 100%; /* Full width */
+    background-color: black; /* Black background color */
+    z-index: 1000; /* Ensure the navbar appears above other content */
+  }
+  
+  .navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar li {
+    flex: 1; /* Each navbar item takes equal space */
+  }
+  
+  .navbar a {
+    display: block;
+    color: white; /* White text color */
+    text-align: center;
+    padding: 20px 30px; /* Increased vertical and horizontal padding */
+    text-decoration: none;
+    font-size: 22px; /* Increased font size */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #555; /* Darker background color on hover */
+  }
+  
+  /* Active/current link */
+  .navbar .active {
+    background-color: #4CAF50; /* Green */
+  }
+  
+
+  
+/* Responsive navigation */
+@media screen and (max-width: 768px) {
+
+    
+    .project-container {
+        margin-top: 770px; /* Adjust margin-top for smaller screens */
+        
+        padding-bottom: 90px;
+      }
+
+
+    .navbar ul {
+      flex-direction: row; /* Stack items vertically on smaller screens */
+    }
+    .navbar li {
+      
+      text-align: center; /* Center align items */
+      border-bottom: 1px solid #666; /* Add a border between items */
+    }  
+    
+    
+
+  }
