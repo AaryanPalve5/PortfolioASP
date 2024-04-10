@@ -108,6 +108,12 @@ body {
 
 /* Responsive navigation */
 @media screen and (max-width: 768px) {
+  
+  .navbar a{
+        
+    font-size: 10px; 
+  
+        }
   .navbar ul {
     flex-direction: row; /* Stack items vertically on smaller screens */
   }

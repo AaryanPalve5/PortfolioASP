@@ -108,35 +108,45 @@ body {
 
 /* Navbar styles */
 .navbar {
-    position: fixed; /* Fixed positioning */
-    top: 0; /* Position at the top of the viewport */
-    left: 0; /* Align with the left edge */
-    width: 100%; /* Full width */
-    background-color: black; /* Black background color */
-    z-index: 1000; /* Ensure the navbar appears above other content */
-  }
-  
-  .navbar ul {
-    list-style-type: none; /* Remove bullet points */
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .navbar li {
-    flex: 1; /* Each navbar item takes equal space */
-  }
-  
-  .navbar a {
-    display: block;
-    color: white; /* White text color */
-    text-align: center;
-    padding: 20px 30px; /* Increased vertical and horizontal padding */
-    text-decoration: none;
-    font-size: 18px; /* Increased font size */
-    transition: background-color 0.3s; /* Smooth transition */
-  }
-  
+  position: fixed; /* Fixed positioning */
+  top: 0; /* Position at the top of the viewport */
+  left: 0; /* Align with the left edge */
+  width: 100%; /* Full width */
+  background-color: black; /* Black background color */
+  z-index: 1000; /* Ensure the navbar appears above other content */
+}
+
+.navbar ul {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  flex: 1; /* Each navbar item takes equal space */
+}
+
+.navbar a {
+  display: block;
+  color: white; /* White text color */
+  text-align: center;
+  padding: 20px 30px; /* Increased vertical and horizontal padding */
+  text-decoration: none;
+  font-size: 18px; /* Increased font size */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #555; /* Darker background color on hover */
+}
+
+/* Active/current link */
+.navbar .active {
+  background-color: #4CAF50; /* Green */
+}
+
   /* Change color on hover */
   .navbar a:hover {
     background-color: #555; /* Darker background color on hover */
@@ -158,7 +168,11 @@ body {
         
         padding-bottom: 90px;
       }
+      .navbar a{
+        
+  font-size: 10px; 
 
+      }
 
     .navbar ul {
       flex-direction: row; /* Stack items vertically on smaller screens */
