@@ -167,12 +167,11 @@ body {
         margin-top: 770px; /* Adjust margin-top for smaller screens */
         
         padding-bottom: 90px;
-      }
-      .navbar a{
-        
-  font-size: 10px; 
-
-      }
+      }.navbar a{
+      
+        font-size: 15px; 
+    
+        }
 
     .navbar ul {
       flex-direction: row; /* Stack items vertically on smaller screens */
