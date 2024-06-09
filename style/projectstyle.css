@@ -25,19 +25,18 @@ body {
 }
 
 .project {
-    width: 350px; /* Set width of each project */
-    margin: 20px; /* Add margin around each project */
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
+    width: 405px; /* Set width of each project */
+     
+    margin: 40px; /* Add margin around each project */
+    background-color:rgba(0, 0, 0, 0.616);
+    border-radius: 2px;
     padding: 10px; /* Increase padding for longer project cards */
     display: flex;
     flex-direction: column; /* Display project details in a column */
     align-items: center;
 }
 
-.project:hover {
-    transform: scale(1.05); 
-}
+ 
 
 .image-container {
     width: 100%; /* Set image container width to full */
@@ -46,7 +45,7 @@ body {
 .image-container img {
     width: 100%;
     max-height: 200px; /* Set max height of images */
-    border-radius: 10px;
+    border-radius: 2px;
 }
 
 .project a {

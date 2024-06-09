@@ -19,8 +19,7 @@ body {
   
 
 
-.container {
-    background-color: rgba(255, 255, 255, 0.492); /* White color with opacity */
+.container { 
     padding: 90px;
     margin-top: 100px; /* Add padding to create space around the content */
     border-radius: 20px; /* Add border radius for rounded corners */
@@ -127,7 +126,7 @@ body {
 .guitar-section {
     margin-top: 40px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7); /* Adjust opacity */
+    background-color: rgba(5, 5, 5, 0.207); /* Adjust opacity */
     border-radius: 10px;
     margin-bottom: 70px;
 }
@@ -161,7 +160,7 @@ body {
 .achievements-section {
     margin-top: 40px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7); /* Adjust opacity */
+    background-color:rgba(0, 0, 0, 0.16);/* Adjust opacity */
     border-radius: 10px;
 }
 
@@ -185,7 +184,7 @@ body {
 .skillset-section {
     margin-top: 40px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7); /* Adjust opacity */
+    background-color: black; /* Adjust opacity */
     border-radius: 10px;
 }
 
@@ -249,7 +248,7 @@ li {
 .achievements-section {
     margin-top: 40px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7); /* Adjust opacity */
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust opacity */
     border-radius: 10px;
     text-align: center; /* Center align content */
 }
@@ -277,7 +276,7 @@ li {
 .section {
     margin-top: 40px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.282);
     border-radius: 10px;
 }
 
